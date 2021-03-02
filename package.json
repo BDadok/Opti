@@ -18,7 +18,7 @@
   ],
   "scripts": {
     "start": "gulp",
-    "build": "gulp build"
+    "build": "gulp build --output public"
   },
   "bin": {
     "create-gulp-starter-kit": "./bin/install.js"
