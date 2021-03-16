@@ -65,10 +65,16 @@
     </div>
 
     <nav class="l-navbar">
+      <script>
+        performance.mark('start');
+        </script>
       <a class="logo" href="/">
-        <img src="/assets/images/homework/logo.svg" onload="performance.clearMarks('logo-load'); performance.mark('logo-load');" width="120" height="58" alt="Web Dev Insider - LOAD TEST" title="Web Dev Insider">
-
+        <img src="/assets/images/homework/logo.svg" onload="performance.clearMarks('logo-load'); performance.mark('logo-load');" width="120" height="58" alt="Web Dev Insider - LOAD TEST" title="Web Dev Insider"/>
       </a>
+    <script>
+      performance.mark('end');
+      performance.measure('measuer', 'start', 'end')
+    </script>
 
       <ul class="navbar-menu">
         <li class="navbar-menu__dropdown"><a id="item-1" href="#">Platform</a></li>
@@ -174,7 +180,7 @@
       style="background-image: url('/assets/images/homework/banner.png')">
       <div class="layout">
         <div class="home-banner__content text">
-          <h1 class="headline-1">Seamless<br> payment option</h1>
+          <h1 class="headline-1">Seamlessssssss<br> payment option</h1>
           <p>It is an online payment tool that makes collecting by Direct Debit easy for everyone from individuals to large cooperations at 1% fee per transaction.</p>
           <div class="l-home-banner__3-cols">
             <div>
