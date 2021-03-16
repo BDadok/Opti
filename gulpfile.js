@@ -231,9 +231,9 @@ gulp.task(
     'videos',
     'extra-files',
     'images',
-    /*'purgecss',*/
-    /*'generate-critical-css',*/
-    /*'generate-service-worker',*/
+    'purgecss',
+    'generate-critical-css',
+    'generate-service-worker',
   )
 );
 
@@ -272,4 +272,4 @@ gulp.task('watch', () => {
   gulp.watch(watchImages, gulp.series('images')).on('change', browserSync.reload);
 });
 
-gulp.task('defa ult', gulp.series('build', gulp.parallel('serve', 'watch')));
+gulp.task('default', gulp.series('build', gulp.parallel('serve', 'watch')));
